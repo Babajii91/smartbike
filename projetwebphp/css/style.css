@@ -1,0 +1,482 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex-grow: 1; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    padding: 5px 0;
+}
+
+.footer-col a:hover {
+    color: rgb(15, 186, 12);
+}
+
+.footer-bottom {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 30px 100px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto 80px auto;
+}
+
+.footer-col {
+    width: max-content;
+}
+
+.footer-col>* {
+    display: block;
+    width: max-content;
+}
+
+.footer-middle {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer-middle h3 {
+    margin-bottom: 10px;
+}
+
+.footer-middle label {
+    display: block;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+}
+
+input {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+a.social {
+    display: block;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+a.social:not(:last-child) {
+    margin-right: 10px;
+}
+.container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+}
+
+#hero-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10%;
+}
+
+.hero-content h2 {
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 10px;
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #4fc311;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero-content a:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+.velo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.velo-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.velo-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.velo-card h3 {
+    margin-top: 10px;
+}
+
+.velo-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #4fc311;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.velo-card a:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+.velo-details-card {
+    display: flex;
+    width: 80%;
+    margin: 60px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.velo-details-image {
+    flex: 1;
+}
+
+.velo-details-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.velo-details-info {
+    flex: 2;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.velo-details-info h2 {
+    margin-bottom: 10px;
+}
+
+.velo-details-info p {
+    margin-bottom: 10px;
+}
+
+.velo-details-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4fc311;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.velo-details-info a:hover {
+    background-color: #333;
+    color: #4fc311;
+}
+
+.back-button {
+    display: block;
+    width: 7%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color:  #4fc311;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+.otherbike {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.commande-card {
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.commande-card h2 {
+    margin-bottom: 50px;
+}
+
+.commande-card label,
+.commande-card input,
+.commande-card textarea,
+.commande-card select {
+    display: block;
+    margin: 25px auto;
+    width: 40%;
+}
+
+.commande-card button,
+.cancel-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #4fc311;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.commande-card button:hover,
+.cancel-button:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+.commande-btn-prod {
+    text-align: center;
+}
+
+.commande-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 40%;
+    background-color:  #4fc311;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.commande-btn:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+#content-process-commande {
+    width: 60%;
+    margin: 300px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#content-process-commande h2 {
+    margin-bottom: 20px;
+}
+
+#content-process-commande p,
+#content-process-commande a {
+    margin: 15px 0;
+}
+
+#content-process-commande a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4fc311;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content-process-commande a:hover {
+    background-color: #333;
+    color: #4fc311;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 98px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #4fc311;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+    color: #4fc311;
+}
+
+
+.error-page {
+    width: 60%;
+    margin: 230px auto;
+    padding: 60px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+.error-page h2 {
+    margin-bottom: 20px;
+    color: #ffa600;
+}
+
+.error-page p,
+.error-page a {
+    margin: 15px 0;
+    color: #333;
+}
+
+.error-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #4fc311;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-page a:hover {
+    background-color: #333;
+    color:  #4fc311;
+}
+
+#google-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
